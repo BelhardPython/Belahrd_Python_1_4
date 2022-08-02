@@ -21,8 +21,8 @@ def add_to_list(s_list: list, element: str) -> list:
     :param element: добавляемый продукт
     :return: список покупок
     """
-    # TODO вставить код сюда
-    return s_list
+    result = s_list.append(element)
+    return result
 
 
 if __name__ == '__main__':

@@ -25,8 +25,9 @@ users = {}
 
 
 def save_user(users_list: dict, user_data: dict) -> dict:
-    # TODO вставить код сюда
+    users_list.get()
     return users_list
+
 
 
 if __name__ == '__main__':

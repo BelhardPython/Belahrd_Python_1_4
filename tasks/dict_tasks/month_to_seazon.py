@@ -23,8 +23,16 @@ def month_to_season(month: int) -> str:
     :return: название сезона, например "зима"
     :rtype: str
     """
-    season = None
-    return season
+
+    if month == 12:
+        return 'Зима'
+    elif month == 4:
+        return 'Весна'
+    elif month == 7:
+        return 'Лето'
+    elif month == 9:
+        return 'Осень'
+    return
 
 
 if __name__ == '__main__':
