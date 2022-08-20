@@ -6,9 +6,9 @@
 
 
 def get_values(collection: dict):
-    # TODO вставить код сюда
-    result = None
+    result = collection.values()
     return result
+
 
 
 if __name__ == '__main__':

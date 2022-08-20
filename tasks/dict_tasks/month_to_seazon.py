@@ -23,7 +23,24 @@ def month_to_season(month: int) -> str:
     :return: название сезона, например "зима"
     :rtype: str
     """
-    season = None
+    SEASONS = {
+        1: 'Зима',
+        2: 'Зима',
+        12: 'Зима',
+        3: 'Весна',
+        4: 'Весна',
+        5: 'Весна',
+        6: 'Лето',
+        7: 'Лето',
+        8: 'Лето',
+        9: 'Осень',
+        10: 'Осень',
+        11: 'Осень'
+    }
+    if month > 1 and month < 13:
+        season = SEASONS[month]
+    else:
+        season = None
     return season
 
 
